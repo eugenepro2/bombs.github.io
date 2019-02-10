@@ -5,13 +5,14 @@ var config      = require('../config');
 function build(cb) {
     runSequence(
         'clean',
+        'iconfont',
         'sprite:svg',
         'svgo',
         'sass',
         'jade',
         'webpack',
         'copy',
-        'list-pages',
+        // 'list-pages',
         cb
     );
 }

@@ -1,0 +1,132 @@
+.program
+	padding: 95px 0
+	+r($mobile)
+		padding: 40px 0
+	h2
+		margin-bottom: 20px
+		span
+			color: $coral
+			+r($mobile)
+				display: block
+	p
+		font-size: 18px
+		margin-bottom: 70px
+	&__loadmore
+		color: $coral
+		text-align: center
+		text-decoration: underline
+		font-size: 12px
+		display: block
+		margin-bottom: 20px
+	&__block
+		margin-bottom: 50px
+		+r($mobile)
+			width: 250px
+			position: relative
+			left: 50%
+			transform: translateX(-50%)
+			margin-bottom: 20px
+		&__header
+			background: url('../img/course/border-program.svg')
+			background-size: cover
+			width: 930px
+			height: 72px
+			position: relative
+			display: flex
+			align-items: center
+			cursor: pointer
+			+r($mobile)
+				background-image: url('../img/course/border-program-m.svg')
+				background-repeat: no-repeat
+				width: 255px
+				height: 99px
+			&__number
+				width: 50px
+				height: 50px
+				border-radius: 50%
+				color: #ffffff
+				background: $cool-grey
+				display: flex
+				justify-content: center
+				align-items: center
+				position: absolute
+				left: -25px
+				top: 50%
+				transform: translateY(-50%)
+				font-size: 24px
+				font-weight: 600
+				transition: all 0.3s
+				+r($mobile)
+					width: 35px
+					height: 35px
+					font-size: 18px
+					left: -17px
+					top: 30px
+			h3
+				font-size: 20px
+				font-weight: 600
+				text-transform: uppercase
+				color: $cool-grey
+				padding-left: 40px
+				transition: all 0.3s
+				+r($mobile)
+					font-size: 14px
+					display: block
+				span
+					color: #000000
+					font-size: 18px
+					font-weight: 500
+					text-transform: none
+					+r($mobile)
+						font-size: 14px
+						display: block
+						padding-right: 10px
+		&__content
+			display: none
+			p
+				font-size: 16px
+				font-weight: 500
+				margin-bottom: 20px
+				+r($mobile)
+					font-size: 12px
+					line-height: 1.7
+					br
+						display: none
+			h4
+				font-weight: 600
+				+r($mobile)
+					font-size: 12px
+				span
+					color: $coral
+					+r($mobile)
+						padding-top: 5px
+						display: block
+			&__image
+				width: 360px
+				height: 280px
+				overflow: hidden
+				box-shadow: 0 0 40px 0 rgba(181, 184, 193, 0.3)
+				position: relative
+				top: -10px
+				+r($mobile)
+					font-size: 14px
+					width: 100%
+					height: 100%
+					margin-bottom: 30px
+					margin-top: 30px
+				img
+					width: 100%
+					height: 100%
+					display: block
+		&.is-active
+			.program__block
+				&__header
+					background: url('../img/course/border-program-active.svg')
+					background-size: cover
+					+r($mobile)
+						background: url('../img/course/border-program-active-m.svg')
+						background-repeat: no-repeat
+					&__number	
+						background: $coral
+					h3
+						color: $coral

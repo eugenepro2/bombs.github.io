@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="749px" height="205px" viewBox="0 0 749 205" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M55.1349175,0 L37.7152156,0 C36.13369,0 34.8501331,1.32738089 34.8501331,2.96290377 L34.8501331,20.9773587 C34.8501331,22.6129409 36.13369,23.9402625 37.7152156,23.9402625 L46.0526058,23.9402625 C45.9437327,28.6572646 44.8836521,32.4319447 42.8780943,35.2704065 C41.2965688,37.5103618 38.9014171,39.3651395 35.6981975,40.828814 C34.2255451,41.4984303 33.5894967,43.2998757 34.2771165,44.8050901 L36.339976,49.3087039 C37.0046751,50.7545416 38.6492325,51.3886623 40.0703134,50.7545416 C43.8636827,49.0597607 47.0669023,46.9146183 49.6798003,44.307263 C52.8658294,41.1251044 55.048965,37.534065 56.229379,33.5282191 C57.4098503,29.5223732 58,24.0587786 58,17.1255838 L58,2.96290377 C58,1.32744015 56.7163857,0 55.1349175,0 Z" id="path-1"></path>
+        <filter x="-160.4%" y="-71.6%" width="420.8%" height="251.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="12.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.709803922   0 0 0 0 0.721568627   0 0 0 0 0.756862745  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M6.07610092,50.7519579 C9.82362888,49.0627943 13.0096007,46.9173194 15.6397464,44.3153555 C18.8543691,41.1326157 21.0490223,37.5527742 22.2294363,33.5758311 C23.4098503,29.598888 24,24.1165149 24,17.1287117 L24,2.96344493 C24,1.32762333 22.7165003,0 21.1349175,0 L3.7152156,0 C2.13369004,0 0.850133057,1.32762333 0.850133057,2.96344493 L0.850133057,20.9811901 C0.850133057,22.617071 2.13369004,23.9446351 3.7152156,23.9446351 L12.0526058,23.9446351 C11.9437327,28.6624987 10.8836521,32.4378682 8.87809434,35.2768485 C7.29656878,37.5172128 4.90135977,39.3723294 1.69819749,40.8362712 C0.225545063,41.5060097 -0.410503262,43.3077842 0.277116548,44.8132735 L2.33424581,49.305856 C2.99900227,50.7519579 4.65501997,51.3921213 6.07610092,50.7519579 Z" id="path-3"></path>
+        <filter x="-160.4%" y="-71.6%" width="420.8%" height="251.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="12.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.709803922   0 0 0 0 0.721568627   0 0 0 0 0.756862745  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dekstop" transform="translate(-282.000000, -2470.000000)">
+            <g id="цитата" transform="translate(0.000000, 2401.000000)">
+                <g id="Group-2" transform="translate(306.000000, 70.000000)">
+                    <g id="right-quote-sign" transform="translate(0.000000, 103.000000)" fill-rule="nonzero">
+                        <g id="Shape">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use fill="#B5B8C1" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                        <g id="Shape">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                            <use fill="#B5B8C1" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        </g>
+                    </g>
+                    <polygon id="Path-2" stroke="#B5B8C1" stroke-width="2" stroke-linecap="round" stroke-dasharray="1,10" points="2 68.1384135 66.458179 202.054506 724.637048 202.054506 680.693395 0"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

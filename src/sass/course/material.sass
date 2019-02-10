@@ -1,0 +1,54 @@
+.material
+	padding-top: 90px
+	+r($mobile)
+		padding: 40px 0
+	.container
+		position: relative
+	&__before
+		background-size: cover
+		width: 600px
+		height: 200px
+		position: absolute
+		bottom: 50px
+		left: -20px
+		+r($mobile)
+			top: 120px
+			left: 0
+			width: 320px
+			height: 122px
+			background-image: url('../img/course/bg-material-m.png')
+		&--2
+			bottom: -50px
+	h2
+		margin-bottom: 20px
+		+r($mobile)
+			text-align: center
+		span
+			color: $coral
+	p
+		font-size: 18px
+		+r($mobile)
+			font-size: 12px
+			text-align: center
+			br
+				display: none
+ul.material
+	li
+		font-size: 16px
+		font-weight: 500
+		margin-bottom: 15px
+		position: relative
+		padding-left: 25px
+		+r($mobile)
+			font-size: 12px
+			br
+				display: none
+		&:before
+			content: ''
+			background: url('../img/course/material-check.svg')
+			background-size: cover
+			width: 15px
+			height: 5px
+			top: 7px
+			left: 0
+			position: absolute

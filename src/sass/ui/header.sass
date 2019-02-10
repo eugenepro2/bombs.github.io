@@ -1,0 +1,195 @@
+.header
+  padding-top: 35px
+  position: absolute
+  width: 100%
+  z-index: 100
+  height: 80px
+  +r($mobile)
+    padding-top: 20px
+    z-index: 1002
+  &.is-active
+    position: fixed
+  &__logo
+    width: 130px
+    height: 65px
+    display: block
+    +r($mobile)
+      width: 55px
+      height: 60px
+    img
+      width: 100%
+    .coral
+      display: none
+  nav
+    ul
+      width: 90%
+      float: right
+      display: flex
+      justify-content: space-between
+      a
+        font-size: 12px
+        font-weight: 600
+        letter-spacing: 2px
+        text-transform: uppercase
+        text-decoration: none
+        color: $black
+        position: relative
+        overflow: hidden
+        &:before
+          content: ''
+          border: 1.5px solid $sandy-yellow
+          border-radius: 10px
+          width: 100%
+          position: absolute
+          top: 48%
+          transform: translateY(-50%) translateX(-50%)
+          opacity: 0
+          transition: all 0.3s
+        &:hover:before
+          opacity: 1
+          transform: translateY(-50%) translateX(0%)
+  &__login
+    display: flex
+    justify-content: center
+    a
+      text-transform: uppercase
+      text-decoration: none
+      color: #000000
+      font-size: 13px
+      font-weight: 600
+      letter-spacing: 2px
+      display: flex
+      justify-content: center
+      align-items: center
+      i
+        font-size: 17px
+      span
+        padding-left: 10px
+        position: relative
+        &:before
+          content: ''
+          border: 1.5px solid $sandy-yellow
+          border-radius: 10px
+          width: 47px
+          position: absolute
+          top: 48%
+          transform: translateY(-50%) translateX(-50%)
+          opacity: 0
+          transition: all 0.3s
+      &:hover
+        span:before
+          opacity: 1
+          transform: translateY(-50%) translateX(0%)
+  &-course
+    display: none
+    .header__logo
+      .white
+        display: none
+      .coral
+        display: block
+    .menu-button
+      &:after, &:before
+        background: #000000
+
+.menu-button
+  float: right
+  position: relative
+  z-index: 1003
+  &:after, &:before
+    content: ''
+    display: block
+    width: 30px
+    height: 4px
+    border-radius: 2px
+    background-color: #ffffff
+    margin-bottom: 8px
+    transition: all .3s ease-out
+  &.is-active
+    &:after
+      transform: rotate(45deg) translateY(-9px)
+      background-color: $cool-grey !important
+    &:before
+      transform: rotate(-45deg) translateY(8px)
+      background-color: $cool-grey !important
+    span
+      opacity: 1
+      transition: all 0.3s
+  span
+    position: absolute
+    top: 0px
+    right: 35px
+    font-size: 12px
+    font-weight: 600
+    letter-spacing: 1.8px
+    color: $cool-grey
+    text-transform: uppercase
+    opacity: 0
+
+
+.mobile-menu
+  display: none
+  position: fixed
+  top: 0
+  z-index: 1001
+  background: #ffffff
+  width: 100%
+  height: 100%
+  padding-top: 20px
+  overflow: scroll
+  img
+    position: relative
+    z-index: 1004
+    padding-bottom: 20px
+    display: none
+  ul
+    li
+      font-size: 16px
+      font-weight: 600
+      letter-spacing: 2.5px
+      text-transform: uppercase
+      border-bottom: 1px solid $pale-grey
+      padding: 15px 0
+      position: relative
+      ul
+        padding-top: 15px
+        li
+          padding-left: 20px
+          font-size: 12px
+          border: none
+          transition: all 0.3s
+          &:not(:last-child)
+            border-top: 1px solid $pale-grey
+            border-bottom: 1px solid $pale-grey
+          a
+            color: $coral
+      i
+        position: absolute
+        right: 0
+        top: 16px
+        transform: rotate(90deg)
+        font-size: 25px
+        transition: all 0.3s
+      a
+        color: #000000
+        text-decoration: none
+      ul
+        display: none
+  &-course
+    &.is-active
+      padding-bottom: 0 !important
+      i
+        transform: rotate(270deg) translateX(10px)
+  .footer__social
+    position: relative
+    left: 50%
+    transform: translateX(-50%)
+    justify-content: space-between
+    width: 230px
+    margin-top: 20px
+    margin-bottom: 20px
+    a
+      margin-right: 0
+      .icon-vk-2
+        font-size: 14px
+      .icon-youtube
+        font-size: 22px

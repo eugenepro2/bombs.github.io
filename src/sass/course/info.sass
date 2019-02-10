@@ -1,0 +1,45 @@
+.info
+  background: $coral
+  padding: 50px 0
+  color: #ffffff
+  +r($mobile)
+    padding-bottom: 15px
+  &__block
+    +r($mobile)
+      border-radius: 5px
+      border: solid 2px #ffffff
+      padding: 20px
+      margin-bottom: 35px
+    h2
+      font-weight: 600
+      letter-spacing: 5px
+      font-size: 36px
+      +r($mobile)
+        font-size: 30px
+        letter-spacing: 4px
+        white-space: nowrap
+    span
+      color: #000000
+      font-size: 16px
+      font-weight: 600
+      letter-spacing: 5px
+      display: inline-block
+      margin-bottom: 5px
+      +r($mobile)
+        font-size: 12px
+        letter-spacing: 3px
+    p
+      margin-top: 15px
+      text-transform: uppercase
+      font-size: 18px
+      font-weight: 600
+      letter-spacing: 2.5px
+      +r($mobile)
+        font-size: 12px
+        letter-spacing: 1.7px
+        padding: 0 10px
+        br
+          display: none
+    span + p
+      margin-top: 5px
+    

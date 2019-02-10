@@ -1,0 +1,51 @@
+section.contact.contact--course.hidden-xs
+  .container
+    .row
+      .col-sm-1
+      .col-sm-7
+        h2 У тебя есть 
+         span вопрос?
+        p Напиши нам, заполнив форму ниже или в 
+          a(href="#") WhatsApp 
+          | / 
+          a(href="#") Telegram
+      .col-sm-4
+        .contact__social.center-xs
+          a(href="#")
+            i.icon.icon-whatsapp
+          a(href="#")
+            i.icon.icon-telegram_contact
+      .col-sm-1
+      .col-sm-10
+        form(method="post" action='send.php')
+          .form__block
+            .flex
+              input(type="text" name="name" placeholder="Имя" required)
+              input(type="email" name="email" placeholder="Email" required)
+              input(type="text" name="question" placeholder="Твой вопрос?" required)
+            .flex
+              input.checkbox#checkbox-3(type="checkbox")
+              label.label(for="checkbox-3")
+              label.label-for(for="checkbox-3") Я даю свое 
+                a(href="#") согласие на обработку персональных данных
+            input(type="submit" value="Задать вопрос")
+          p Спасибо, твои данные успешно отправлены!
+      .col-sm-1
+
+section.contact-m.hidden-sm
+  .container
+    .row
+      .col-xs-12.center-xs
+        h2 У тебя другой
+          span вопрос?
+        p Напиши нам в социальных сетях<br>или заполни форму ниже
+        .contact__social
+          a(href="#")
+            i.icon.icon-whatsapp
+          a(href="#")
+            i.icon.icon-telegram_contact
+          a(href="#")
+            i.icon.icon-vk-2
+          a(href="#")
+            i.icon.icon-facebook
+        a.btn.btn--contact--m(href="#pop-ask-m" data-pop) Задать вопрос

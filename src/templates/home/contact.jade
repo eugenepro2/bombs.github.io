@@ -1,0 +1,45 @@
+section.contact.hidden-xs#contact
+  .container
+    .contact__before.lazy(data-src="img/bg-contact.png")
+    .row
+      .col-sm-7.col-sm-offset-1
+        h2 У тебя другой
+          span вопрос?
+        p Напиши нам <span>здесь</span><br>или в WhatsApp / Telegram
+        .contact__social
+          a(href="https://api.whatsapp.com/send?phone=79099519047")
+            i.icon.icon-whatsapp
+          a(href="tg://resolve?domain=bombsartbot")
+            i.icon.icon-telegram_contact
+      .col-sm-4
+        form(method="post" action='send.php')
+          .form__block
+            input(type="text" name="name" placeholder="Имя" required)
+            input(type="email" name="email" placeholder="Email" required)
+            input(type="text" name="question" placeholder="Твой вопрос?" required)
+            .flex.form__checkbox
+              input.checkbox#checkbox-1(type="checkbox")
+              label.label(for="checkbox-1")
+              label.label-for(for="checkbox-1") Я даю свое 
+                a(href="#") согласие на обработку<br> персональных данных
+            input(type="submit" value="Задать вопрос")
+          p Спасибо, твои данные успешно отправлены!
+
+section.contact-m.hidden-sm#contact-m
+  .container
+    .row
+      .col-xs-12.center-xs
+        h2 У тебя другой
+          span вопрос?
+        p Напиши нам в социальных сетях<br>или заполни форму ниже
+        .contact__social
+          a(href="https://api.whatsapp.com/send?phone=79099519047")
+            i.icon.icon-whatsapp
+          a(href="tg://resolve?domain=bombsartbot")
+            i.icon.icon-telegram_contact
+          a(href="http://vk.me/club164122579")
+            i.icon.icon-vk-2
+          a(href="http://m.me/1954065224833803")
+            i.icon.icon-facebook
+        a.btn.btn--contact--m(href="#pop-ask-m" data-pop) Задать вопрос
+

@@ -1,17 +1,31 @@
 include _mixins
 doctype html
 html
-  head
-    include _head
+	head
+		include _head
 
-  body(class=bodyClass)
-    //BEGIN out
-    .out(class=outClass)
-      block header
-        include ../partials/_header
-      block content
-    //END out
+	body(class=bodyClass)
+		include ../partials/_script
+		//BEGIN out
+		.out(class=outClass)
+			//- .preloader
+			//- 	.l-preloader
+			//- 		.c-preloader
+			block header
+				include ../partials/_header
+			block content
 
-    //LOAD SCRIPTS
-    block scripts
-      script(type="text/javascript" src="js/app.js")
+			block footer
+				include ../partials/_footer
+		//END out
+
+		//LOAD SCRIPTS
+		block scripts
+			script(src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js")
+			script(src="https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.1.9/svg4everybody.legacy.min.js")
+			script(type="text/javascript" src="js/app.js")
+			script.
+				svg4everybody();
+
+		
+			

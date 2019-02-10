@@ -1,0 +1,241 @@
+.study
+	padding: 70px 0px 100px
+	position: relative
+	.container
+		position: relative
+	h2
+		margin-bottom: 15px
+		span
+			color: $coral
+	p
+		font-size: 18px
+		margin-bottom: 50px
+	&__block
+		display: flex
+		flex-wrap: wrap
+	&__line
+		border-left: 1px solid $coral
+		height: 430px
+		display: block
+		position: absolute
+		top: 118px
+		left: 566px
+		transform: rotate(20.5deg)
+		z-index: 100
+	img
+		width: 100%
+	&__before
+		width: 520px
+		height: 340px
+		position: relative
+		left: 100px
+		&__photo
+			width: 520px
+			height: 340px
+			overflow: hidden
+		&__like
+			position: absolute
+			bottom: 0
+			left: -50px
+			p
+				width: 90px
+				height: 50px
+				font-size: 20px
+				font-weight: 600
+				letter-spacing: 2.8px
+				background-color: $cool-grey
+				box-shadow: 0 2px 25px 0 rgba(181, 184, 193, 0.5)
+				display: flex
+				justify-content: center
+				align-items: center
+				margin-bottom: 0
+				border-radius: 2px
+				text-transform: uppercase
+			i
+				font-size: 70px
+				width: 40px
+				height: 40px
+				transform: rotate(180deg)
+				color: $cool-grey
+				position: relative
+				top: 5px
+				left: -20px
+	&__after
+		width: 520px
+		height: 340px
+		position: relative
+		right: 36px
+		top: 20px
+		&__photo
+			width: 520px
+			height: 340px
+			overflow: hidden
+		&__like
+			position: absolute
+			bottom: 0
+			right: -68px
+			p
+				width: 140px
+				height: 50px
+				font-size: 20px
+				font-weight: 600
+				letter-spacing: 2.8px
+				background-color: $sandy-yellow
+				box-shadow: 0 0 16px 0 $sandy-yellow
+				display: flex
+				justify-content: center
+				align-items: center
+				margin-bottom: 0
+				border-radius: 2px
+				text-transform: uppercase
+			i
+				font-size: 70px
+				width: 40px
+				height: 40px
+				color: $cool-grey
+				position: relative
+				top: 15px
+				left: 105px
+	.swiper
+		&-container
+			height: 370px
+			width: 1150px
+			overflow: visible
+			position: relative
+			left: -96px
+		&-pagination
+			width: 15px
+			right: 16px
+			left: auto
+			bottom: 50%
+			transform: translateY(50%)
+			z-index: 100
+			&-bullet
+				background: transparent
+				border: 2px solid $cool-grey
+				cursor: pointer
+				opacity: 1
+				margin-bottom: 24px !important
+				width: 10px
+				height: 10px
+				&-active
+					background: $coral
+					border: 0px solid $cool-grey
+		&-button
+			&-prev, &-next
+				background: transparent
+				color: $coral
+				font-size: 30px
+				opacity: 1
+				width: 45px
+				height: 45px
+				border-radius: 50%
+				display: flex
+				justify-content: center
+				align-items: center
+				transition: all 0.3s
+				&:hover
+					background: $coral
+					i
+						color: #ffffff
+			&-prev
+				top: 0px
+				left: auto
+				right: 0
+				i
+					transform: rotate(-90deg)
+					display: inline-block
+					top: -5px
+					position: relative
+			&-next
+				top: auto
+				right: 0px
+				bottom: 8px
+				i
+					transform: rotate(90deg)
+					display: inline-block
+					position: relative
+					top: 5px
+			&-disabled
+				i
+					color: $cool-grey
+					
+
+
+.study-m
+	padding-top: 80px
+	padding-bottom: 60px
+	overflow: hidden
+	.container
+		position: relative
+	h2
+		margin-bottom: 5px
+		span
+			color: $coral
+			display: block
+	p
+		font-size: 12px
+		margin-bottom: 25px
+		br
+			display: none
+	.swiper
+		&-container
+			width: 320px
+			height: 400px
+		&-pagination
+			left: -25px
+			&-bullet
+				width: 12px
+				height: 12px
+				border: 2px solid $cool-grey
+				background: none
+				opacity: 1
+				margin: 0 10px !important
+				&-active
+					background: $coral
+					border: none
+	.study
+		&__line
+			width: 270px
+			border: none
+			border-top: 2px solid $coral
+			left: 22px
+			height: 0
+			top: 290px
+			transform: rotate(20deg)
+		&__block
+			flex-direction: column
+			img
+				width: 100%
+		&__before
+			width: 220px
+			height: 250px
+			left: 25px
+			&__photo
+				width: 220px
+				height: 270px
+			&__like
+				bottom: 100px
+				left: -10px
+				p
+					width: 60px
+					height: 33px
+				i
+					font-size: 60px
+					top: -20px
+		&__after
+			width: 220px
+			right: -18px
+			top: -117px
+			&__photo
+				width: 220px
+			&__like
+				right: -30px
+				bottom: 100px
+				p
+					width: 90px
+					height: 33px
+				i
+					font-size: 60px
+					top: -20px
+					left: 63px

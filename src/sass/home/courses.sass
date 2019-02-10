@@ -1,0 +1,101 @@
+.courses
+	padding-top: 130px
+	padding-bottom: 100px
+	h2
+		margin-bottom: 40px
+	p
+		font-size: 18px
+		font-weight: 500
+		margin-bottom: 20px
+		line-height: 1.6
+	.flex
+		margin-top: 40px
+	.swiper-container
+		width: 500px
+		height: 500px
+		overflow: visible
+		margin: 0
+		transform: translateY(100px)
+		img
+			width: 100%
+			box-shadow: 0 0 40px 0 rgba(181, 184, 193, 0.3)
+		.swiper-pagination
+			width: 15px
+			right: -60px
+			left: initial
+			bottom: 50%
+			transform: translateY(50%)
+			z-index: 100
+			&-bullet
+				background: transparent
+				border: 2px solid $cool-grey
+				cursor: pointer
+				opacity: 1
+				margin-bottom: 25px
+				width: 10px
+				height: 10px
+				&-active
+					background: $coral
+					border: 0px solid $cool-grey
+	&__block:nth-of-type(1)
+		margin-bottom: 90px
+		.swiper-container
+			margin-left: 19px
+	&__block:nth-of-type(2)
+		.swiper-pagination
+			right: initial
+			left: -60px
+
+
+.courses-m
+	padding: 40px 0
+	min-height: 754px
+	h2
+		margin-bottom: 20px
+		span
+			color: $coral
+	.courses
+		&__tabs
+			ul
+				margin-bottom: 30px
+				border-radius: 5px
+				border: solid 2px $pale-grey
+				height: 60px
+				display: flex
+				li
+					width: 50%
+					font-size: 16px
+					letter-spacing: 2.5px
+					color: $battleship-grey
+					text-transform: uppercase
+					display: flex
+					justify-content: center
+					align-items: center
+					cursor: pointer
+					&.is-active
+						background-color: $pale-grey
+						box-shadow: 0 -5px 10px 0 $pale-grey
+			.swiper-slide
+				width: 270px
+				height: 270px
+				img
+					width: 100%
+			h3
+				margin-top: 20px
+				margin-bottom: 15px
+				font-size: 18px
+				font-weight: 600
+				letter-spacing: 2.5px
+				text-transform: uppercase
+			p
+				font-size: 12px
+  			font-weight: 500
+				line-height: 1.5
+				margin-bottom: 20px
+			// &__block
+			// 	display: none
+			// 	&:first-of-type
+			// 		display: block
+
+
+

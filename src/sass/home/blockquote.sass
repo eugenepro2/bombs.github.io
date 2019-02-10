@@ -1,0 +1,61 @@
+.blockquote
+  background: rgba(242, 243, 246, 0.5)
+  height: 390px
+  position: relative
+  +r($mobile)
+    height: 340px
+    &:before
+      content: ''
+      width: 205px
+      height: 180px
+      background-image: url('../img/bg-interesting.png')
+      background-size: cover
+      position: absolute
+      bottom: -70px
+      left: 10px
+  &__block
+    display: flex
+    justify-content: center
+    &:before
+      content: ''
+      background: url('../img/blockquote.svg') no-repeat
+      display: block
+      width: 770px
+      height: 210px
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      +r($mobile)
+        top: 140px
+        width: 290px
+        height: 240px
+        background: url('../img/blockquote-m.svg') no-repeat
+    p
+      font-size: 36px
+      letter-spacing: 3px
+      color: $battleship-grey
+      text-transform: uppercase
+      text-align: left
+      margin-top: 70px
+      margin-left: 50px
+      +r($mobile)
+        margin-top: 0
+        font-size: 24px
+        letter-spacing: 2px
+        text-align: center
+        margin-left: 23px
+  span
+    font-size: 18px
+    color: $battleship-grey
+    position: relative
+    top: 50px
+    right: 12px
+    +r($mobile)
+      font-size: 14px
+      width: 50%
+      display: block
+      text-align: right
+      float: right
+      right: 6px
+      top: 60px

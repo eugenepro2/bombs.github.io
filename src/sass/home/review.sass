@@ -1,0 +1,223 @@
+.review
+	background: $pale-grey
+	padding-top: 70px
+	padding-bottom: 150px
+	position: relative
+	&__before
+		background-reptat: no-repeat
+		background-size: cover
+		width: 200px
+		height: 270px
+		display: block
+		position: absolute
+		bottom: -60px
+		left: 0
+	h2
+		span
+			color: $coral
+	&__block
+		display: flex
+		flex-wrap: wrap
+		margin-top: 70px
+		&__photo
+			width: 100px
+			height: 100px
+			border-radius: 50%
+			overflow: hidden
+			img
+				width: 100%
+		&__text
+			width: 70%
+			h3
+				font-size: 16px
+				font-weight: 600
+				margin-bottom: 30px
+				margin-left: 38px
+			&__border
+				background: url('../img/review-border.svg') no-repeat
+				background-size: cover
+				width: 560px
+				height: 202px
+				display: flex
+				justify-content: center
+				align-items: center
+				flex-direction: column
+				padding: 70px
+				position: relative
+				left: 15px
+				p
+					font-size: 16px
+					font-weight: 500
+					position: relative
+					top: -15px
+					@media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+						width: 470px
+						left: 10px
+				a
+					position: absolute
+					bottom: 0
+					width: 300px
+					height: 60px
+					border-radius: 5px
+					background-color: $cool-grey
+					box-shadow: 0 2px 25px 0 rgba(181, 184, 193, 0.5)
+					font-size: 16px
+					font-weight: 600
+					letter-spacing: 1.6px
+					color: #ffffff
+					display: flex
+					justify-content: center
+					align-items: center
+					text-transform: uppercase
+					text-decoration: none
+					bottom: -29px
+					transition: all 0.7s
+					@media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+						right: 50%
+						transform: translateX(-50%)
+					&:hover
+						background: $coral
+	.swiper
+		&-container
+			width: 220px
+			height: 340px
+			margin-top: 50px
+		&-button
+			&-prev, &-next
+				background: transparent
+				color: $coral
+				font-size: 30px
+				opacity: 1
+				width: 45px
+				height: 45px
+				border-radius: 50%
+				display: flex
+				justify-content: center
+				align-items: center
+				transition: all 0.3s
+				&:hover
+					background: $coral
+					color: #ffffff
+			&-prev
+				top: auto
+				bottom: -33px
+				right: 54px
+				left: auto
+				i
+					transform: rotate(90deg)
+					display: inline-block
+					top: 7px
+					position: relative
+			&-next
+				top: -33px
+				right: 54px
+				i
+					transform: rotate(-90deg)
+					display: inline-block
+					top: -6px
+					position: relative
+			&-disabled
+				i
+					color: $battleship-grey
+	&__slider
+		position: relative
+	.swiper-container
+		padding-right: 10px
+		padding-top: 10px
+	&__slide
+		display: flex
+		align-items: center
+		justify-content: flex-end
+		cursor: pointer
+		h4
+			font-size: 14px
+			font-weight: 500
+			text-align: right
+			color: $battleship-grey
+			margin-right: 15px
+		&__photo
+			transition: all 0.3s
+			img
+				width: 100%
+				border-radius: 50%
+				width: 80px
+				height: 80px
+		p
+			display: none
+		&:hover
+			.review__slide__photo
+				transform: scale(1.05)
+
+				
+
+.review-m
+	background: $pale-grey
+	padding: 40px 0
+	h2
+		margin-bottom: 15px
+		span
+			color: $coral
+			display: block
+	.review
+		&__block
+			margin-top: 0
+			&__photo
+				width: 80px
+				height: 80px
+				margin-right: 20px
+			h3
+				font-size: 14px
+				font-weight: 600
+			&__border
+				background: url('../img/review-border-m.svg') no-repeat
+				background-size: cover
+				width: 242px
+				height: 240px
+				display: flex
+				justify-content: center
+				flex-direction: column
+				position: relative
+				left: 50%
+				transform: translateX(-50%)
+				p
+					font-size: 12px
+					font-weight: 500
+					padding: 30px
+				a
+					position: absolute
+					width: 270px
+					height: 60px
+					border-radius: 5px
+					background-color: $cool-grey
+					box-shadow: 0 2px 25px 0 rgba(181, 184, 193, 0.5)
+					font-size: 16px
+					font-weight: 600
+					letter-spacing: 1.6px
+					color: #ffffff
+					display: flex
+					justify-content: center
+					align-items: center
+					text-transform: uppercase
+					text-decoration: none
+					bottom: -29px
+					left: -15px
+					transition: all 0.7s
+					&:hover
+						background: $coral
+	.swiper
+		&-container
+			height: 400px
+			overflow: visible
+		&-pagination
+			&-bullet
+				width: 12px
+				height: 12px
+				border: solid 2px $cool-grey
+				opacity: 1
+				background: none
+				margin: 0 10px !important
+				&-active
+					background: $coral
+					border: none
+
+			

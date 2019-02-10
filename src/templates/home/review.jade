@@ -1,0 +1,75 @@
+mixin review(img, name, href, text)
+  .swiper-slide
+    .review__slide
+      h4= name
+      .review__slide__photo
+        img.lazy(data-src=`img/review/${img}.jpg`, alt="")
+      p= text
+      a(href=href)
+
+mixin review-m(img, name, href, text)
+  .swiper-slide
+    .review__block
+      .row
+        .col-xs-12.middle-xs.flex
+          .review__block__photo
+            img.lazy(data-src=`img/review/${img}.jpg`, alt="")
+          h3= name
+        .col-xs-12
+          .review__block__border
+            p= text
+            a(href=href) Читать в instagram
+
+
+section.review#review.hidden-xs
+  .review__before.lazy(data-src="img/review/clip.png")
+  .container
+    .row
+      .col-xs-12.center-xs
+        h2 Отзывы
+          span учеников
+      .col-sm-1
+      .col-sm-7
+        .review__block
+          .review__block__photo
+            img.lazy(data-src="img/review/elena.jpg", alt="")
+          .review__block__text
+            h3 Елена Колесникова
+            .review__block__text__border
+              p Решила попробовать себя в рисовании и записалась на курсы Bombs. Обучение оказалось очень удобным и полезным! Была возможность общаться с преподавателем, который постоянно помогал и давал советы!
+              a(href="https://instagram.com/p/Bf-kUr8Bj3p/") Читать в instagram
+      .col-sm-3
+        .review__slider
+          .swiper-container.review-slider
+            .swiper-wrapper
+              +review('elena', 'Елена Колесникова', 'https://instagram.com/p/Bf-kUr8Bj3p/', 'Решила попробовать себя в рисовании и записалась на курсы Bombs. Обучение оказалось очень удобным и полезным! Была возможность общаться с преподавателем, который постоянно помогал и давал советы!')
+              +review('evhenia', 'Евгения Ткаченко', 'https://instagram.com/p/Bf_YQoLA4C4/', 'Когда я наткнулась на сайт школы Bombs, сразу влюбилась! Cначала попробовала пройти бесплатный урок, который очень вдохновил меня, и после я уже приобрела курс, о чем ни капельки не пожалела!')
+              +review('oksana', 'Оксана Матевосян', 'https://instagram.com/p/Bf_In4vF7_D/', 'У меня всегда был интерес к рисованию, особенно нравилось рисовать персонажей. Решила приобрести курс в школе Bombs. Занятия очень порадовали, в чате с учениками позитивная и творческая атмосфера!')
+              +review('renata', 'Рената Сахабутдинова', 'https://instagram.com/p/Bf_aVyqHfvH/', 'Мне выпала возможность одной из первых пройти занятия от Bombs и я была в восторге! Думаю, я не буду останавливаться и планирую приобрести еще один курс, чтобы преумножить свои знания и навыки!')
+              +review('pitrova', 'Мария Питрова', 'https://vk.com/wall145131918_7260', 'Очень захотелось поделиться своим промежуточным результатом. Сделала быструю архитектурную зарисовку, получилось здорово! Даже не думала, что смогу создать такой творческий набросок!')
+              +review('alena', 'Алёна Безручко', 'https://instagram.com/p/Bf8vUwtDAiH/', 'Недавно начала заниматься по обучающим урокам от школы Bombs и это оказалось нереально интересно и увлекательно! Особенно  удобно то, что я могу рисовать в любом месте и с любого устройства! Это класс!')
+              +review('gordienko', 'Мария Гордиенко', 'https://instagram.com/p/Bf-cr6WAy3l/', 'В инстаграме нашла крутую онлайн школу @bombs_art и теперь я могу рисовать где хочу, когда хочу, вообщем в любой момент, когда душа пожелает. Спасибо ребятам за эту возможность!')
+          .swiper-button-prev.swiper-button-prev-review
+            i.icon.icon-arrow
+          .swiper-button-next
+            i.icon.icon-arrow.swiper-button-next-review
+        .col-sm-1
+
+
+section.review-m.hidden-sm#review-m
+  .container
+    .row
+      .col-xs-12.center-xs
+        h2 Отзывы
+          span учеников
+      .col-xs-12
+        .swiper-container.review-slider-m
+          .swiper-wrapper
+            +review-m('elena', 'Елена Колесникова', 'https://instagram.com/p/Bf-kUr8Bj3p/', 'Решила попробовать себя в рисовании и записалась на курсы Bombs. Обучение оказалось очень удобным и полезным! Была возможность общаться с преподавателем, который постоянно помогал и давал советы!')
+            +review-m('evhenia', 'Евгения Ткаченко', 'https://instagram.com/p/Bf_YQoLA4C4/', 'Когда я наткнулась на сайт школы Bombs, сразу влюбилась! Cначала попробовала пройти бесплатный урок, который очень вдохновил меня, и после я уже приобрела курс, о чем ни капельки не пожалела!')
+            +review-m('oksana', 'Оксана Матевосян', 'https://instagram.com/p/Bf_In4vF7_D/', 'У меня всегда был интерес к рисованию, особенно нравилось рисовать персонажей. Решила приобрести курс в школе Bombs. Занятия очень порадовали, в чате с учениками позитивная и творческая атмосфера!')
+            +review-m('renata', 'Рената Сахабутдинова', 'https://instagram.com/p/Bf_aVyqHfvH/', 'Мне выпала возможность одной из первых пройти занятия от Bombs и я была в восторге! Думаю, я не буду останавливаться и планирую приобрести еще один курс, чтобы преумножить свои знания и навыки!')
+            +review-m('pitrova', 'Мария Питрова', 'https://vk.com/wall145131918_7260', 'Очень захотелось поделиться своим промежуточным результатом. Сделала быструю архитектурную зарисовку, получилось здорово! Даже не думала, что смогу создать такой творческий набросок!')
+            +review-m('alena', 'Алёна Безручко', 'https://instagram.com/p/Bf8vUwtDAiH/', 'Недавно начала заниматься по обучающим урокам от школы Bombs и это оказалось нереально интересно и увлекательно! Особенно  удобно то, что я могу рисовать в любом месте и с любого устройства! Это класс!')
+            +review-m('gordienko', 'Мария Гордиенко', 'https://instagram.com/p/Bf-cr6WAy3l/', 'В инстаграме нашла крутую онлайн школу @bombs_art и теперь я могу рисовать где хочу, когда хочу, вообщем в любой момент, когда душа пожелает. Спасибо ребятам за эту возможность!')
+          .swiper-pagination.swiper-pagination-review-m

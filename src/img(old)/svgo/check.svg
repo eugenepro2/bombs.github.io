@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="9px" viewBox="0 0 12 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dekstop" transform="translate(-907.000000, -2215.000000)" fill-rule="nonzero" fill="#ff2e2e">
+            <g id="подписка" transform="translate(0.000000, 1969.000000)">
+                <g id="check-mark" transform="translate(907.000000, 246.000000)">
+                    <path d="M5.43191615,8.58951632 C4.88785803,9.13682789 4.00507648,9.13682789 3.46128093,8.58951632 L0.408043588,5.51802066 C-0.136014529,4.97097323 -0.136014529,4.08291266 0.408043588,3.53586523 C0.951839128,2.98855365 1.83462069,2.98855365 2.3786788,3.53586523 L4.19780749,5.36560812 C4.3351349,5.5034926 4.55806219,5.5034926 4.69565217,5.36560812 L9.6213212,0.410483682 C10.1651167,-0.136827894 11.0478983,-0.136827894 11.5919564,0.410483682 C11.8532198,0.673309462 12,1.02990726 12,1.4015614 C12,1.77321554 11.8532198,2.12981334 11.5919564,2.39263912 L5.43191615,8.58951632 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

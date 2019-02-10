@@ -1,0 +1,268 @@
+.pop#pop--call
+  .pop__block
+    .pop__close
+      i.icon.icon-close
+    .pop__left
+      h2 Мы вам<br>перезвоним
+      p Оставьте свои <br>контактные данные<br>и мы свяжемся с Вами<br>в ближайшее время
+      img(src="img/pop/phone.svg", alt="")
+    .pop__right
+      form(method="post" action='send.php')
+        .form__block
+          input(type="text" placeholder="Имя" name="name" required)
+          input(type="tel" placeholder="Телефон" name="tel" required)
+          .flex.form__checkbox
+            input.checkbox#checkbox-pop-call(type="checkbox")
+            label.label(for="checkbox-pop-call")
+            label.label-for(for="checkbox-pop-call") Я даю свое 
+              a(href="#") согласие на обработку<br> персональных данных
+          input(type="submit" value="Перезвонить")
+        p Спасибо, твои данные успешно отправлены!
+
+.pop.pop-checkout#pop-checkout-course1-standart
+  .pop__block
+    .pop__header.hidden-sm
+      .container
+        .row
+          .col-xs-12
+            img(src="img/logo-m-coral.svg", alt="")
+    .pop__close
+      i.icon.icon-close
+    .pop__left
+      h2 Оформление<br>заказа
+      p Заполни свои контактные<br>данные и переходи<br>к оплате
+      img(src="img/pop/wallet.svg", alt="")
+    .pop__right
+      form.form__height
+        h2.hidden-sm Оформление заказа
+        p.hidden-sm Заполни свои контактные данные<br> и переходи к оплате
+        script#7e0228be5c9e2ff20751ec4eb959ff324c580838(src='https://bombsart.getcourse.ru/pl/lite/widget/script?id=23744')
+
+
+.pop.pop-checkout#pop-checkout-course1-individual
+  .pop__block
+    .pop__header.hidden-sm
+      .container
+        .row
+          .col-xs-12
+            img(src="img/logo-m-coral.svg", alt="")
+    .pop__close
+      i.icon.icon-close
+    .pop__left
+      h2 Оформление<br>заказа
+      p Заполни свои контактные<br>данные и переходи<br>к оплате
+      img(src="img/pop/wallet.svg", alt="")
+    .pop__right
+      form.form__height
+        h2.hidden-sm Оформление заказа
+        p.hidden-sm Заполни свои контактные данные<br> и переходи к оплате
+        script#6c04ef2430fd27255ccd9609960f7ae7158f83d9(src='https://bombsart.getcourse.ru/pl/lite/widget/script?id=23749')
+
+.pop.pop-checkout#pop-checkout-course2-standart
+  .pop__block
+    .pop__header.hidden-sm
+      .container
+        .row
+          .col-xs-12
+            img(src="img/logo-m-coral.svg", alt="")
+    .pop__close
+      i.icon.icon-close
+    .pop__left
+      h2 Оформление<br>заказа
+      p Заполни свои контактные<br>данные и переходи<br>к оплате
+      img(src="img/pop/wallet.svg", alt="")
+    .pop__right
+      form.form__height
+        h2.hidden-sm Оформление заказа
+        p.hidden-sm Заполни свои контактные данные<br> и переходи к оплате
+        script#c0c81a18e87566c0b875b4f60232774ef4347019(src='https://bombsart.getcourse.ru/pl/lite/widget/script?id=23751')
+
+
+.pop.pop-checkout#pop-checkout-course2-individual
+  .pop__block
+    .pop__header.hidden-sm
+      .container
+        .row
+          .col-xs-12
+            img(src="img/logo-m-coral.svg", alt="")
+    .pop__close
+      i.icon.icon-close
+    .pop__left
+      h2 Оформление<br>заказа
+      p Заполни свои контактные<br>данные и переходи<br>к оплате
+      img(src="img/pop/wallet.svg", alt="")
+    .pop__right
+      form.form__height
+        h2.hidden-sm Оформление заказа
+        p.hidden-sm Заполни свои контактные данные<br> и переходи к оплате
+        script#ecd426151298fd1dc998d4cbddc29463ed274cd3(src='https://bombsart.getcourse.ru/pl/lite/widget/script?id=23752')
+
+.pop.pop-try#pop-try
+  .pop__block
+    .pop__header.hidden-sm
+      .container
+        .row
+          .col-xs-12
+            img(src="img/logo-m-coral.svg", alt="")
+    .pop__close
+      i.icon.icon-close
+    .pop__left
+      h2 Попробуй <br>первый урок
+      h3 всего за
+        span 99₽
+      p Выбери один из курсов<br>и начни учиться уже<br>сейчас
+      img.hidden-xs(src="img/pop/pencil.svg", alt="")
+      img.hidden-sm(src="img/pop/pencil-m.svg", alt="")
+    .pop__right.step-1
+      div
+        h3 
+          span Шаг 1. 
+          | Выбери курс:
+        label
+          input(type="radio" name="try" value='1' checked)
+          div
+          img(src="img/pop/1.png", alt="")
+          h4 Архитектурный <br>скетчинг 
+            .tooltip
+              .tooltip__hover 
+                p В данном курсе ты познакомишься с законами перспективы, правилами композиции на листе и различными техниками рисования.
+                p Благодаря этим навыкам, мы научим тебя ярко, быстро и эффектно реализовывать свои идеи на бумаге!
+        label
+          input(type="radio" name="try" value='2')
+          div
+          img(src="img/pop/2.png", alt="")
+          h4 Живые<br>персонажи
+            .tooltip
+              .tooltip__hover 
+                p В этом курсе ты познакомишься с основными пропорциями человека и отличительными чертами мужских и женских тел. А также научишься рисовать крутых карикатурных персонажей!
+        a.btn.btn--next.hidden-xs Далее
+    .pop__right.step-2
+      div
+        h3 
+          span Шаг 2. 
+          | Заполни контактные данные:
+        //script#a2ea08d89677578b503e53b180b61cf75710fed1(src='https://bombsart.getcourse.ru/pl/lite/widget/script?id=23725')
+        iframe.sketch(src='https://bombsart.getcourse.ru/pl/lite/widget/widget?id=23725&id=23725' style="height: 370px")
+        iframe.character(src='https://bombsart.getcourse.ru/pl/lite/widget/widget?id=23737&id=23737' style="height: 370px; display: none")
+
+.pop.pop-works#pop-works
+  .pop__block
+    .pop__close
+      i.icon.icon-close
+    h2 Работы
+      span Любови
+    .swiper-container.works-slider
+      .swiper-wrapper
+        .swiper-slide
+          img(src="img/pop/works/luba/1.jpg", alt="")
+        .swiper-slide
+          img(src="img/pop/works/luba/2.jpg", alt="")
+        .swiper-slide
+          img(src="img/pop/works/luba/3.jpg", alt="")
+        .swiper-slide
+          img(src="img/pop/works/luba/4.jpg", alt="")
+        .swiper-slide
+          img(src="img/pop/works/luba/5.jpg", alt="")
+      .swiper-pagination.swiper-pagination-works
+      .swiper-button-next.swiper-button-next-works
+        i.icon.icon-arrow
+      .swiper-button-prev.swiper-button-prev-works
+        i.icon.icon-arrow
+
+.pop.pop-works#pop-works-2
+  .pop__block
+    .pop__close
+      i.icon.icon-close
+    h2 Работы
+      span Лидии
+    .swiper-container.works-slider
+      .swiper-wrapper
+        .swiper-slide
+          img(src="img/pop/works/lyda/1.jpg", alt="")
+        .swiper-slide
+          img(src="img/pop/works/lyda/2.jpg", alt="")
+        .swiper-slide
+          img(src="img/pop/works/lyda/3.jpg", alt="")
+        .swiper-slide
+          img(src="img/pop/works/lyda/4.jpg", alt="")
+        .swiper-slide
+          img(src="img/pop/works/lyda/5.jpg", alt="")
+        .swiper-slide
+          img(src="img/pop/works/lyda/6.jpg", alt="")
+        .swiper-slide
+          img(src="img/pop/works/lyda/7.jpg", alt="")
+        .swiper-slide
+          img(src="img/pop/works/lyda/8.jpg", alt="")
+      .swiper-pagination.swiper-pagination-works
+      .swiper-button-next.swiper-button-next-works
+        i.icon.icon-arrow
+      .swiper-button-prev.swiper-button-prev-works
+        i.icon.icon-arrow
+
+.pop.pop-material#pop-material
+  .pop__block
+    .pop__close
+      i.icon.icon-close 
+    .container
+      .row
+        .col-xs-12
+          h2 
+            span Материалы для
+            | обучения
+          ul.material
+            li Цветные (набор 12-24 шт.) и простые (2М,Т) <br>карандаши (KOH-I-NOOR)
+            li Черная гелевая ручка (PILOT 0,5 мм.)
+            li Черный линер (FABER-CASTELL 1мм.)
+            li Акварель (НЕВСКАЯ ПАЛИТРА 12 цветов)
+            li Белая, черная, бирюзовая гуашь <br>(МАСТЕР КЛАСС или СОНЕТ 50 мл.
+            li Кисти (Из шерсти белок №2,№4; <br>Плоская квадратная кисть, синтетика №11)
+            li Линейка ( 15-30 см.)
+            li Мастихин (СОНЕТ 1010).
+            li Белая бумага А4 (папка с листами); <br>светло-голубая бумага (можно и другой оттенок) <br>акварельная бумага А4, 1 лист.
+
+.pop.pop-material-2#pop-material-2
+  .pop__block
+    .pop__close
+      i.icon.icon-close 
+    .container
+      .row
+        .col-xs-12
+          h2 
+            span Материалы для
+            | обучения
+          ul.material
+            li Цветные (набор 12-24 шт.) и простые (2М,Т) карандаши (KOH-I-NOOR); 
+            li Черная гелевая ручка (PILOT 0,5 мм.)
+            li Черный линер (FABER-CASTELL 1мм.)
+            li Акварель (НЕВСКАЯ ПАЛИТРА 12 цветов)
+            li Круглая синтетическая кисть №5
+            li Линейка ( 15-30 см.)
+            li Белая бумага А4, А3 (папки с листами).
+
+.pop#pop-ask-m.pop-ask-m
+  .pop__block
+    .pop__close
+      i.icon.icon-close 
+    .container
+      .row
+        .col-xs-12
+          form(method="post" action='send.php')
+            .form__block
+              h2 Заполни свои контактные данные<br>и опиши свой вопрос:
+              input(type="text" name="name" placeholder="Имя" required) 
+              input(type="tel" name="tel" placeholder="Телефон" required)
+              input(type="email" name="email" placeholder="E-mail" required)
+              textarea(placeholder="Твой вопрос?" name="question")
+              .flex.form__checkbox
+                input.checkbox#checkbox-ask(type="checkbox")
+                label.label(for="checkbox-ask")
+                label.label-for(for="checkbox-ask") Я даю свое 
+                  a(href="#") согласие на обработку<br> персональных данных
+              input(type="submit", value="Отправить")
+            p Спасибо, твои данные успешно отправлены!
+
+.pop#pop-video.pop-video
+  .pop__block
+    .pop__close
+      i.icon.icon-close 
+    iframe(width='100%', height='100%', src='', frameborder='0', allow='autoplay; encrypted-media', allowfullscreen='')

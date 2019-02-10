@@ -1,4 +1,130 @@
 //BEGIN header
-header.header
-  p Hello from jade/partials/_header
+header.header.header-home
+  .container
+    .row.middle-xs
+      .col-sm-3.col-xs-6
+        a(href="index.html").header__logo
+          img.hidden-xs(src="img/logo.svg", alt="Bombs")
+          img.hidden-sm.white(src="img/logo-m.svg", alt="Bombs")
+          img.hidden-sm.coral(src="img/logo-m-coral.svg", alt="Bombs")
+      .col-sm-7.hidden-xs
+        nav
+          ul
+            li
+              a(href="#course-1") курсы
+            li
+              a(href="#study") результаты обучения
+            li
+              a(href="#review") отзывы
+            li
+              a(href="#faq") вопрос/ответ
+            li
+              a(href="#contact") контакты
+      .col-sm-2.hidden-xs
+        .header__login
+          a(href="http://app.bombsart.ru/")
+            i.icon.icon-user
+            span Вход
+      .col-xs-6.hidden-sm
+        .menu-button
+          span Меню
+
+header.header.header-course
+  .container
+    .row.middle-xs
+      .col-sm-3.col-xs-6
+        a(href="index.html").header__logo
+          img.hidden-xs(src="img/logo.svg", alt="Bombs")
+          img.hidden-sm.white(src="img/logo-m.svg", alt="Bombs")
+          img.hidden-sm.coral(src="img/logo-m-coral.svg", alt="Bombs")
+      .col-sm-7.hidden-xs
+        nav
+          ul
+            li
+              a(href="index.html#course-1") курсы
+            li
+              a(href="index.html#study") результаты обучения
+            li
+              a(href="index.html#review") отзывы
+            li
+              a(href="index.html#faq") вопрос/ответ
+            li
+              a(href="index.html#contact") контакты
+      .col-sm-2.hidden-xs
+        .header__login
+          a(href="http://app.bombsart.ru/")
+            i.icon.icon-user
+            span Вход
+      .col-xs-6.hidden-sm
+        .menu-button
+          span Меню
+
+
+.mobile-menu
+  .container
+    .row
+      .col-xs-12
+        img(src="img/logo-m-coral.svg", alt="")
+        ul
+          li.mobile-menu-course Курсы
+            i.icon.icon-arrow
+            ul
+              li
+                a(href="course-1.html") Архитектурный скетчинг
+              li
+                a(href="course-2.html") Живые персонажи
+          li
+            a(href="#study-m") Результаты обучения
+          li
+            a(href="#review-m") Отзывы
+          li
+            a(href="#faq") Вопрос/ответ
+          li
+            a(href="#contact-m") Контакты
+        .footer__social
+          a(href="https://www.instagram.com/bombs_art/")
+            .icon.icon-instagram
+          a(href="https://www.youtube.com/channel/UCxcMqB8HLpRhJWXRjeA4sOg")
+            .icon.icon-youtube
+          a(href="https://vk.com/bombs_art")
+            .icon.icon-vk-2
+          a(href="tg://resolve?domain=bombs_art")
+            .icon.icon-telegram_contact
+        a.btn.btn--login(href="http://app.bombsart.ru/") 
+          i.icon.icon-user
+          | Вход
+
+.mobile-menu.mobile-menu-course1
+  .container
+    .row
+      .col-xs-12
+        img(src="img/logo-m-coral.svg", alt="")
+        ul
+          li.mobile-menu-course Курсы
+            i.icon.icon-arrow
+            ul
+              li
+                a(href="course-1.html") Архитектурный скетчинг
+              li
+                a(href="course-2.html") Живые персонажи
+          li
+            a(href="index.html#study-m") Результаты обучения
+          li
+            a(href="index.html#review-m") Отзывы
+          li
+            a(href="index.html#faq") Вопрос/ответ
+          li
+            a(href="index.html#contact-m") Контакты
+        .footer__social
+          a(href="https://www.instagram.com/bombs_art/")
+            .icon.icon-instagram
+          a(href="https://www.youtube.com/channel/UCxcMqB8HLpRhJWXRjeA4sOg")
+            .icon.icon-youtube
+          a(href="https://vk.com/bombs_art")
+            .icon.icon-vk-2
+          a(href="g://resolve?domain=bombs_art")
+            .icon.icon-telegram_contact
+        a.btn.btn--login(href="http://app.bombsart.ru/") 
+          i.icon.icon-user
+          | Вход
 //END header

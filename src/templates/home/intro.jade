@@ -1,0 +1,29 @@
+//BEGIN intro
+section.intro
+  .progressive-image.intro__before.hidden-xs
+    .loadingImage.intro__before(style="background-image: url('img/bg-intro-light.png')" data-image="img/bg-intro.png")
+    .overlay.intro__before
+  .progressive-image.intro__before.hidden-sm
+    .loadingImage.intro__before(style="background-image: url('img/bg-intro-m-light.png')" data-image="img/bg-intro-m.png")
+    .overlay.intro__before
+  .container
+    .row.middle-xs
+      .col-xs-12
+        h1 научим тебя рисовать<br>
+          span.typed
+        p Осторожно! Взрывная концентрация мотивации<br> и реального опыта в обучении рисованию. <br>Здесь рождаются художники!
+        .intro__buttons
+          a.btn.btn--intro(href="#pop-try" data-pop) Хочу попробовать
+          //- a(href="#").intro__video
+          //-   .intro__video__play
+          //-     img(src="img/play.svg", alt="")
+          //-   span о нас за 60 сек
+  a(href="#course-1").intro__bottom.hidden-xs
+    span наши
+    .intro__bottom__block
+      img(src="img/arrow.svg", alt="")
+    span курсы
+  +social('hidden-xs')
+
+
+//END intro

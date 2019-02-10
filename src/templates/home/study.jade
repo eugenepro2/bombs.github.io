@@ -1,0 +1,62 @@
+section.study.hidden-xs#study
+  .container
+    .study__line
+    .row
+      .col-xs-12.center-xs
+        h2 Результаты
+          span Обучения
+        p Как изменилось мастерство наших учеников<br> после прохождения курсов
+      .col-sm-1
+        .scroll.scroll--4
+          span Работы учеников
+      .col-sm-11
+        .swiper-container.study-slider
+          .swiper-wrapper
+            each val in [1, 2, 3, 4, 5, 6, 7, 8]
+              .swiper-slide
+                .study__block
+                  .study__before
+                    .study__before__photo
+                      img.lazy(data-src=`img/study/before-${val}.png`, alt="")
+                    .study__before__like
+                      p до
+                      i.icon.icon-like
+                  .study__after
+                    .study__before__photo
+                      img.lazy(data-src=`img/study/after-${val}.png`, alt="")
+                    .study__after__like
+                      p после
+                      i.icon.icon-like
+          .swiper-pagination.swiper-pagination-study
+          .swiper-button-next.swiper-button-next-study
+            i.icon.icon-arrow
+          .swiper-button-prev.swiper-button-prev-study
+            i.icon.icon-arrow
+
+section.study-m.hidden-sm#study-m
+  .container
+    .study__line
+    .row
+      .col-xs-12.center-xs
+        h2 Результаты
+          span Обучения
+        p Как изменилось мастерство наших учеников<br> после прохождения курсов
+      .col-xs-12
+        .swiper-container.study-slider
+          .swiper-wrapper
+            each val in [1, 2, 3, 4, 5, 6, 7, 8]
+              .swiper-slide
+                .study__block
+                  .study__before
+                    .study__before__photo
+                      img.lazy(data-src=`img/study/before-${val}-m.png`, alt="")
+                    .study__before__like
+                      p до
+                      i.icon.icon-like
+                  .study__after
+                    .study__before__photo
+                      img.lazy(data-src=`img/study/after-${val}-m.png`, alt="")
+                    .study__after__like
+                      p после
+                      i.icon.icon-like
+          .swiper-pagination.swiper-pagination-study

@@ -1,0 +1,193 @@
+.education
+	padding-bottom: 50px
+	&__top
+		position: relative
+		+r($mobile)
+			left: 33px
+		&__image
+			position: relative
+			top: -40px
+			+r($mobile)
+				right: 20px
+		&__before
+			content: ''
+			background-size: cover
+			width: 190px
+			height: 180px
+			display: block
+			left: -190px
+			top: -120px
+			position: absolute
+			+r($mobile)
+				width: 150px
+				height: 150px
+				left: -100px
+		&__after
+			content: ''
+			background-size: cover
+			width: 280px
+			height: 270px
+			display: block
+			position: absolute
+			right: -300px
+			top: -110px
+			+r($mobile)
+				width: 100px
+				height: 200px
+				right: 0px
+				top: 90px
+		h4
+			position: absolute
+			font-size: 24px
+			font-weight: 600
+			letter-spacing: 2.7px
+			text-transform: uppercase
+			top: 37px
+			left: 100px
+			+r($mobile)
+				left: 35px
+				top: 10px
+			span
+				display: block
+				position: relative
+				&:before
+					content: ''
+					width: 100%
+					position: absolute
+					border: 2px solid $coral
+					top: 50%
+					left: 50%
+					border-radius: 3px
+					transform: translate(-50%, -50%)
+				+r($mobile)
+					display: inline-block
+	h2
+		margin-top: 80px
+		span
+			display: block
+			color: $coral
+			margin-bottom: 55px
+	h3
+		font-size: 20px
+		font-weight: 600
+		text-transform: uppercase
+		margin-bottom: 15px
+		span
+			color: $coral
+	p
+		font-size: 16px
+		font-weight: 500
+		margin-bottom: 50px
+		width: 75%
+	&__slider
+		margin-top: 150px
+		background-size: cover
+		width: 550px
+		height: 550px
+		position: relative
+		.swiper
+			&-container
+				width: 170px
+				height: 366px
+				left: -13px
+				top: 60px
+				border-radius: 18px
+				overflow: hidden
+			&-slide
+				display: flex
+				justify-content: center
+				align-items: center
+				border-radius: 18px
+				overflow: hidden
+				img
+					width: 100%
+					height: 100%
+			&-button
+				&-prev, &-next
+					background: $cool-grey
+					width: 45px
+					height: 45px
+					border-radius: 50%
+					display: flex
+					justify-content: center
+					align-items: center
+					opacity: 1
+					top: 50%
+					transform: translateY(-50%)
+					margin-top: 0
+					transition: all 0.3s
+					i
+						font-size: 30px
+						color: #ffffff
+						position: relative
+					&:hover
+						background: $coral
+				&-prev
+					left: -20px
+					i
+						transform: rotate(180deg)
+						display: inline-block
+						right: 7px
+				&-next
+					right: -20px
+					i
+						left: 7px
+				&-disabled
+					background: $cool-grey
+
+
+
+.education-m
+	h2
+		margin-top: 50px
+		margin-bottom: 30px
+		span
+			color: $coral
+			display: block
+	h3
+		font-size: 16px
+		font-weight: 600
+		text-transform: uppercase
+		margin-bottom: 10px
+		position: relative
+		line-height: 1.4
+		span
+			color: $coral
+			display: block
+		i
+			position: absolute
+			right: 0
+			top: 50%
+			transform: translateY(-50%) rotate(90deg)
+			color: $cool-grey
+			font-size: 22px
+	p
+		font-size: 12px
+		font-weight: 500
+		line-height: 1.5
+	.education
+		&__slider
+			margin-top: 20px
+			width: 270px
+			height: 270px
+			margin-bottom: 50px
+			.swiper-container
+				width: 85px
+				height: 179px
+				left: -7px
+				top: 29px
+				border-radius: 9px
+				overflow: hidden
+			.swiper-slide
+				border-radius: 9px
+		&__tabs
+			border-bottom: 1px solid $pale-grey
+			padding-bottom: 10px
+			padding-top: 5px
+			margin-bottom: 15px
+			p
+				display: none
+	.swiper-button-next
+		right: 10px
+		top: 50px
+

@@ -1,0 +1,36 @@
+.this
+  background: $pale-grey
+  padding: 75px 0
+  +r($mobile)
+    padding: 40px 0
+  .container
+    position: relative
+  h2
+    margin-bottom: 20px
+    +r($mobile)
+      margin-bottom: 30px
+      font-size: 21px
+    span
+      color: $coral
+  p
+    font-size: 18px
+    +r($mobile)
+      font-size: 12px
+      line-height: 1.7
+      br
+        display: none
+  &__image
+    width: 440px
+    height: 440px
+    overflow: hidden
+    position: absolute
+    right: 0
+    top: -50px
+    box-shadow: 0 0 40px 0 rgba(181, 184, 193, 0.3)
+    +r($mobile)
+      position: static
+      width: 270px
+      height: 270px
+      margin-bottom: 30px
+    img
+      width: 100%

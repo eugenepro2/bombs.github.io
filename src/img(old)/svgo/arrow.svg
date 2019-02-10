@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="14px" viewBox="0 0 25 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dekstop" transform="translate(-670.000000, -747.000000)" fill-rule="nonzero" stroke="#000000" fill="#000000">
+            <g id="экран_1">
+                <g id="back-copy-3" transform="translate(682.500000, 754.000000) rotate(-90.000000) translate(-682.500000, -754.000000) translate(676.500000, 742.500000)">
+                    <path d="M1.53409372,11.2833455 L11.651835,1.0913264 C11.9006704,0.840664217 11.9006704,0.438658825 11.651835,0.187996639 C11.4029996,-0.0626655464 11.0039239,-0.0626655464 10.7550885,0.187996639 L0.18662655,10.8340453 C-0.06220885,11.0847075 -0.06220885,11.4867129 0.18662655,11.7373751 L10.7550885,22.3786943 C10.8771587,22.5016607 11.041484,22.5678733 11.2011143,22.5678733 C11.3607445,22.5678733 11.5250698,22.5063901 11.64714,22.3786943 C11.8959754,22.1280321 11.8959754,21.7260267 11.64714,21.4753645 L1.53409372,11.2833455 Z" id="arrow"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

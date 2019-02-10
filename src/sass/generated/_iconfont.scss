@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "iconfont";
+  src: url('/fonts/iconfont.eot');
+  src: url('/fonts/iconfont.eot?#iefix') format('eot'),
+    url('/fonts/iconfont.woff2') format('woff2'),
+    url('/fonts/iconfont.woff') format('woff'),
+    url('/fonts/iconfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$icon-facebook: "\EA01";
+$icon-arrow: "\EA02";
+$icon-bombs: "\EA03";
+$icon-check: "\EA04";
+$icon-close: "\EA05";
+$icon-dizlike: "\EA06";
+$icon-fb: "\EA07";
+$icon-instagram: "\EA08";
+$icon-key: "\EA09";
+$icon-like: "\EA0A";
+$icon-ok: "\EA0B";
+$icon-telegram: "\EA0C";
+$icon-telegram_contact: "\EA0D";
+$icon-twitter: "\EA0E";
+$icon-user: "\EA0F";
+$icon-vk-2: "\EA10";
+$icon-vk: "\EA11";
+$icon-whatsapp: "\EA12";
+$icon-youtube: "\EA13";
+
+
+%icon {
+  font-family: "iconfont";
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: auto;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon {
+  @extend %icon;
+  display: inline-block;
+}
+
+.icon-facebook:before { content: $icon-facebook; }
+.icon-arrow:before { content: $icon-arrow; }
+.icon-bombs:before { content: $icon-bombs; }
+.icon-check:before { content: $icon-check; }
+.icon-close:before { content: $icon-close; }
+.icon-dizlike:before { content: $icon-dizlike; }
+.icon-fb:before { content: $icon-fb; }
+.icon-instagram:before { content: $icon-instagram; }
+.icon-key:before { content: $icon-key; }
+.icon-like:before { content: $icon-like; }
+.icon-ok:before { content: $icon-ok; }
+.icon-telegram:before { content: $icon-telegram; }
+.icon-telegram_contact:before { content: $icon-telegram_contact; }
+.icon-twitter:before { content: $icon-twitter; }
+.icon-user:before { content: $icon-user; }
+.icon-vk-2:before { content: $icon-vk-2; }
+.icon-vk:before { content: $icon-vk; }
+.icon-whatsapp:before { content: $icon-whatsapp; }
+.icon-youtube:before { content: $icon-youtube; }

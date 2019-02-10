@@ -1,0 +1,25 @@
+section.interesting.hidden-xs
+  .interesting__before.lazy(data-src="img/bg-interesting.png")
+  .container
+    .row
+      .col-sm-1
+        .scroll.scroll--3
+          span Мастер-классы
+      .col-sm-7
+        h2 Не пропусти все самое <br>интересное от Bombs
+        p Следи за нами в 
+          a(href="#") Instagram 
+          | / 
+          a(href="#") youtube 
+          | или <br>подпишись на наши новости, и ты никогда <br>не пропустишь ближайшие мастер-классы
+      .col-sm-4
+        form(method="post" action='send.php')
+          .form__block
+            input(type="email" name="email" placeholder="E-mail" required)
+            .flex.form__checkbox
+              input.checkbox#checkbox(type="checkbox")
+              label.label(for="checkbox")
+              label.label-for(for="checkbox") Я даю свое 
+                a(href="#") согласие на обработку<br> персональных данных
+            input(type="submit" value="Подписаться")
+          p Спасибо, твои данные успешно отправлены!

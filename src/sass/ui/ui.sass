@@ -1,0 +1,530 @@
+@import helpers/colors
+
++r($mobile)
+	.hidden-xs
+		display: none !important
+
++rmin($destkop)
+	.hidden-sm
+		display: none !important
+
+html
+	overflow-x: hidden !important
+
+body
+	&.course
+		.header-home
+			display: none
+		.header-course
+			display: block
+	
+
+
+body
+	font-family: 'Montserrat', sans-serif
+	@media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+		overflow-x: hidden
+	+r($mobile)
+		overflow-x: hidden
+	&.is-active
+		overflow: hidden
+		position: relative
+	&.without-header-footer
+		header, footer
+			display: none
+	&.pop-body
+		.pop
+			position: static
+	&.pop-try
+		.pop-try
+			display: block
+	&.pop-ask-m
+		.pop-ask-m
+			display: block
+	&.pop-checkout-course1-standart
+		#pop-checkout-course1-standart
+			display: block
+	&.pop-checkout-course1-individual
+		#pop-checkout-course1-individual
+			display: block
+	&.pop-checkout-course2-standart
+		#pop-checkout-course2-standart
+			display: block
+	&.pop-checkout-course2-individual
+		#pop-checkout-course2-individual
+			display: block
+	&.pop-works
+		#pop-works
+			display: block
+	&.pop-works-2
+		#pop-works-2
+			display: block
+	&.pop-material
+		#pop-material
+			display: block
+	&.pop-material-2
+		#pop-material-2
+			display: block
+
+.container
+	max-width: 1170px
+	padding: 0px 15px
+	width: 100%
+	height: 100%
+	+r($mobile)
+		padding: 0 25px
+.row
+	height: 100%
+
+.flex
+	display: flex
+
+
+//Заголовок
+h2
+	font-size: 36px
+	font-weight: 600
+	letter-spacing: 5px
+	text-transform: uppercase
+	+r($mobile)
+		font-size: 22px
+		letter-spacing: 3px
+
+//Кнопки
+.btn
+	font-size: 16px
+	font-weight: 600
+	letter-spacing: 1.6px
+	text-transform: uppercase
+	text-decoration: none
+	display: flex
+	position: relative
+	overflow: hidden
+	transition: all 0.7s
+	justify-content: center
+	align-items: center
+	overflow: hidden
+	border-radius: 5px
+	cursor: pointer
+	+r($mobile)
+		font-size: 14px
+	&--intro
+		color: $black
+		background: $sandy-yellow
+		width: 300px
+		height: 60px
+		animation: intro 3s infinite
+		+r($mobile)
+			width: 100%
+			margin-bottom: 25px
+		&:hover
+			background: #ffffff
+		&--course
+			background: $coral
+			width: 280px
+			height: 60px
+			color: #ffffff
+			box-shadow: 0 0 16px 0 rgba(251, 72, 72, 0.28)
+			+r($mobile)
+				padding-top: 5px
+				width: 270px
+			b
+				padding-left: 7px
+				+r($mobile)
+					font-size: 20px
+					position: relative
+					top: -2px
+			&:hover
+				background: #000000
+	&--buy
+		width: 180px
+		height: 60px
+		background: $coral
+		color: #ffffff
+		box-shadow: 0 0 16px 0 rgba(251, 72, 72, 0.28)
+		&:hover
+			background: #000000
+		+r($mobile)
+			width: 100%
+			font-size: 16px
+		&--course
+			width: 300px
+			position: absolute
+			left: 50%
+			transform: translateX(-50%)
+			bottom: -27px
+			+r($mobile)
+				position: relative
+				width: 100%
+				font-size: 16px
+				bottom: 0
+				margin-top: 15px
+		&--key
+			background-color: $pale-grey
+			box-shadow: 0 -5px 10px 0 $pale-grey
+			width: 60px
+			height: 60px
+			i
+				font-size: 28px
+				color: $coral
+	&--more
+		border: solid 2px $cool-grey
+		background: transparent
+		color: $cool-grey
+		width: 215px
+		height: 60px
+		margin-left: 30px
+		+r($mobile)
+			background: $coral
+			color: #ffffff
+			border: none
+			width: 200px
+			margin-left: 0
+			margin-right: 10px
+		.icon
+			font-size: 20px
+			font-weight: bold
+			position: relative
+			right: 20px
+			opacity: 0
+			transform: translateX(-5px)
+			transition: all 0.7s
+			position: absolute
+		&:hover
+			border-color: $coral
+			color: $coral
+			padding-right: 30px
+			.icon
+				opacity: 1
+				transform: translateX(0px)
+		+r($mobile)
+	&--teacher
+		background-color: $cool-grey
+		box-shadow: 0 2px 25px 0 rgba(181, 184, 193, 0.5)
+		width: 245px
+		height: 60px
+		color: #ffffff
+		text-transform: uppercase
+		font-size: 16px
+		font-weight: 600
+		letter-spacing: 1.6px
+		&:hover
+			background: $coral
+		+r($mobile)
+			width: 100%
+			font-size: 16px
+	&--certificate
+		background: $coral
+		width: 300px
+		height: 60px
+		color: #ffffff
+		box-shadow: 0 0 16px 0 rgba(251, 72, 72, 0.28)
+		&:hover
+			background: #000000
+	&--program
+		margin-top: 20px
+		box-shadow: 0 0 16px 0 rgba(251, 72, 72, 0.28)
+		background: #000000
+		color: #ffffff
+		width: 365px
+		height: 60px
+		border-radius: 5px
+		position: relative
+		padding-left: 50px
+		transition: all 1s cubic-bezier(0.9, 0, 0.25, 1)
+		&:hover
+			padding-left: 0
+			padding-right: 50px
+			background: $coral
+			.key
+				transform: translateX(305px)
+		.key
+			width: 60px
+			height: 60px
+			border-radius: 5px
+			background: #ffffff
+			position: absolute
+			left: 0
+			top: 0
+			display: flex
+			justify-content: center
+			align-items: center
+			transition: all 1s cubic-bezier(0.9, 0, 0.25, 1)
+			i
+				font-size: 25px
+				color: $coral
+	&--contact
+		&--m
+			background-color: $cool-grey
+			box-shadow: 0 0 15px 0 rgba(181, 184, 193, 0.5)
+			border-radius: 5px
+			color: #ffffff
+			height: 60px
+	&--login
+		background: $coral
+		color: #ffffff
+		height: 60px
+		i
+			font-size: 18px
+			padding-right: 25px
+	&--material
+		margin-top: 150px
+		background: $coral
+		color: #ffffff
+		width: 100%
+		height: 60px
+		box-shadow: 0 0 16px 0 rgba(251, 72, 72, 0.28)
+	&--next
+		background-color: $cool-grey
+		box-shadow: 0 2px 25px 0 rgba(181, 184, 193, 0.5)
+		color: #ffffff
+		height: 40px
+		width: 150px
+		float: right
+		margin-top: 20px 
+		&:hover
+			background: $coral
+			
+
+
+@keyframes intro
+	0%
+		transform: scale(1)
+	50%
+		transform: scale(1.05)
+	100%
+		transform: scale(1)
+	
+
+
+
+//Формы
+form
+	position: relative
+	z-index: 10
+	display: flex
+	justify-content: center
+	align-content: center
+	flex-direction: column
+	input
+		border-radius: 5px
+		border: solid 2px $cool-grey
+		width: 300px
+		height: 60px
+		display: flex
+		align-items: center
+		background: none
+		font-size: 16px
+		font-weight: 500
+		text-align: left
+		color: $battleship-grey
+		padding-left: 45px
+		font-family: 'Montserrat', sans-serif
+		margin-bottom: 20px
+		+r($mobile)
+			width: 100%
+			height: 50px
+			font-size: 14px
+		&::placeholder
+			color: $cool-grey
+		&:focus
+			border-color: $battleship-grey
+			&:invalid
+				border-color: $battleship-grey
+		&:valid
+			border-color: $battleship-grey
+	input:not([type="submit"]).invalid
+		border: solid 2px $coral
+	input[type=submit]
+		text-align: center
+		justify-content: center
+		padding-left: 0
+		box-shadow: 0 2px 25px 0 rgba(181, 184, 193, 0.5)
+		background: $cool-grey
+		border-color: $cool-grey
+		color: #ffffff
+		font-size: 16px
+		font-weight: 600
+		letter-spacing: 1.6px
+		text-transform: uppercase
+		transition: all 0.7s
+		margin-top: 20px
+		&:hover
+			background: $coral
+			border-color: $coral
+		+r($mobile)
+			background: $coral
+			border-color: $coral
+			height: 60px
+	.checkbox
+		display: none
+		+ .label
+			width: 20px
+			height: 20px
+			border-radius: 3px
+			border: 2px solid $cool-grey
+			display: inline-block
+			cursor: pointer
+			&.invalid
+				border: solid 2px $coral
+			&:before
+				content: ''
+				width: 12px
+				height: 9px
+				background: url('../img/check.svg') no-repeat
+				display: block
+				position: relative
+				top: 3px
+				left: 2px
+				opacity: 0
+		&:checked + .label
+			border-color: $coral
+			&:before
+				opacity: 1
+		+ .label + .label-for
+			font-size: 13px
+			font-weight: 500
+			color: $cool-grey
+			display: inline-block
+			position: relative
+			left: 10px
+			cursor: pointer
+			a
+				color: $cool-grey
+	textarea
+		border-radius: 5px
+		border: solid 2px $cool-grey
+		width: 100%
+		height: 90px
+		display: flex
+		align-items: center
+		background: none
+		font-size: 16px
+		font-weight: 500
+		text-align: left
+		color: $battleship-grey
+		padding-left: 45px
+		font-family: 'Montserrat', sans-serif
+		margin-bottom: 20px
+		padding-top: 15px
+		&::placeholder
+			color: $cool-grey !important
+		&:focus
+			border-color: $battleship-grey
+	p
+		display: none
+		&:before
+			content: none !important
+	.form
+		&__block
+			width: 100%
+			display: flex
+			flex-direction: column
+			align-items: center
+		&__checkbox
+			width: 300px
+			align-items: center
+			+r($mobile)
+				width: 270px
+
+input, textarea
+	-webkit-appearance: none
+	-webkit-border-radius: 0
+
+input[type="radio"]
+	display: none
+	
+.sticky
+	position: -webkit-sticky
+	position: sticky
+	top: 20px
+
+.scroll
+	top: 50%
+	transform: translateY(-50%) translateX(-50px)
+	position: relative
+	span
+		transform: rotate(-90deg)
+		font-size: 16px
+		letter-spacing: 3.7px
+		color: $cool-grey
+		display: block
+		width: 100%
+		text-transform: uppercase
+		z-index: 100
+		white-space: nowrap
+	&--3
+		top: 30px
+	&--4
+		top: -150px
+	&--5
+		top: 400px
+	&--price
+		top: 200px
+	&--this
+		top: 50px
+
+
+
+.preloader
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background: #ffffff
+	z-index: 1000000
+
+.l-preloader
+  width: 60px
+  height: 60px
+  position: absolute
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  margin: auto
+
+.c-preloader
+  width: 60px
+  height: 60px
+  position: relative
+  &::before
+    content: ''
+    width: 60px
+    height: 60px
+    display: inline-block
+    position: absolute
+    border-radius: 50%
+    background-color: #000
+    opacity: 0
+    transform: scale(0)
+    animation-name: preloading
+    animation-duration: 1.2s
+    animation-delay: 0s
+    animation-timing-function: linear
+    animation-iteration-count: infinite
+  &::after
+    content: ''
+    width: 60px
+    height: 60px
+    display: inline-block
+    position: absolute
+    border-radius: 50%
+    background-color: #000
+    opacity: 0
+    transform: scale(0)
+    animation-name: preloading
+    animation-duration: 1.2s
+    animation-delay: -0.6s
+    animation-timing-function: linear
+    animation-iteration-count: infinite
+
+@keyframes preloading
+  0%
+    opacity: 1
+    transform: scale(0)
+
+  100%
+    opacity: 0
+    transform: scale(1)

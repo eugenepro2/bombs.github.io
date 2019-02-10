@@ -1,0 +1,101 @@
+.faq
+	padding: 70px 0
+	+r($mobile)
+		padding: 40px 0
+	&__margin
+		margin-right: 50px
+		+r($mobile)
+			margin-right: 0px
+	.container
+		position: relative
+		.faq__before
+			background-size: cover
+			width: 435px
+			height: 235px
+			display: block
+			position: absolute
+			right: 0
+			top: -130px
+	h2
+		margin-bottom: 70px
+		+r($mobile)
+			margin-bottom: 20px
+		span
+			color: $coral
+	&__block
+		padding: 25px
+		border: 1px solid transparent
+		position: relative
+		transition: all 0.7s
+		+r($mobile)
+			width: 100%
+			background-color: $pale-grey
+			box-shadow: 0 0 15px 0 rgba(181, 184, 193, 0.1)
+			border-radius: 5px
+			margin-bottom: 30px
+			padding: 10px
+			padding-left: 25px
+			border: none
+			display: none
+		h3 
+			font-size: 18px
+			font-weight: 600
+			margin-bottom: 20px
+			cursor: pointer
+			+r($mobile)
+				margin-bottom: 0
+				font-size: 14px
+				font-weight: 500
+				width: 83%
+				br
+					display: none
+		&__circle
+			width: 35px
+			height: 35px
+			background-color: $cool-grey
+			display: flex
+			justify-content: center
+			align-items: center
+			border-radius: 50%
+			font-size: 30px
+			color: #ffffff
+			position: absolute
+			right: -17px
+			cursor: pointer
+			&:hover
+				background: $coral
+			+r($mobile)
+				bottom: -17px
+				right: 10px
+		p
+			font-size: 16px
+			font-weight: 500
+			line-height: 1.8
+			+r($mobile)
+				margin-top: 15px
+				font-size: 12px
+				margin-bottom: 10px
+		&__hidden
+			display: none
+		&.is-active
+			border: 1px solid $coral
+			padding: 35px
+			+r($mobile)
+				padding: 10px
+				padding-left: 25px
+				border: none
+			.faq__block__circle
+				background: $coral
+				span
+					position: relative
+					top: -10px
+	#loadmore
+		font-family: Montserrat
+		font-size: 12px
+		font-weight: 500
+		text-align: left
+		color: $coral
+		text-decoration: underline
+		text-align: center
+
+
