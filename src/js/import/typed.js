@@ -5,7 +5,7 @@ import device from 'current-device';
 if (device.mobile()) {
   if($('span').is('.typed')) {
     let typed = new Typed('.typed', {
-      strings: ['персонажей', 'скетчи'],
+      strings: ['characters', 'sketches'],
       typeSpeed: 80,
       backSpeed: 30,
       backDelay: 1000,
@@ -16,7 +16,7 @@ if (device.mobile()) {
 } else{
   if($('span').is('.typed')) {
     let typed = new Typed('.typed', {
-      strings: ['персонажей', 'архитектурные скетчи', 'крутые открытки'],
+      strings: ['characters', 'architectural sketches', 'Cool postcards'],
       typeSpeed: 80,
       backSpeed: 30,
       backDelay: 1000,
