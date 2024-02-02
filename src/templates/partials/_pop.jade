@@ -9,8 +9,8 @@
     .pop__right
       form(method="post" action='send.php')
         .form__block
-          input(type="text" placeholder="Имя" name="name" required)
-          input(type="tel" placeholder="Телефон" name="tel" required)
+          input(type="text" placeholder="Name" name="name" required)
+          input(type="tel" placeholder="Phone" name="tel" required)
           .flex.form__checkbox
             input.checkbox#checkbox-pop-call(type="checkbox")
             label.label(for="checkbox-pop-call")
@@ -249,10 +249,10 @@
           form(method="post" action='send.php')
             .form__block
               h2 Заполни свои контактные данные<br>и опиши свой вопрос:
-              input(type="text" name="name" placeholder="Имя" required) 
-              input(type="tel" name="tel" placeholder="Телефон" required)
+              input(type="text" name="name" placeholder="Name" required) 
+              input(type="tel" name="tel" placeholder="Phone" required)
               input(type="email" name="email" placeholder="E-mail" required)
-              textarea(placeholder="Твой вопрос?" name="question")
+              textarea(placeholder="Your question?" name="question")
               .flex.form__checkbox
                 input.checkbox#checkbox-ask(type="checkbox")
                 label.label(for="checkbox-ask")
