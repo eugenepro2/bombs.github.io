@@ -517,7 +517,23 @@
           </div>
           <div class="pop__right step-2">
               <div>
-                  <h3><span>Step 2. </span>Fill in your contact details:</h3>
+                <form method="post" action="send.php">
+                  <div class="form__block">
+                      <h3><span>Step 2. </span>Fill in your contact details:</h3>
+                      <input type="text" name="name" placeholder="Name" required />
+                      <input type="tel" name="tel" placeholder="Phone" required />
+                      <input type="email" name="email" placeholder="E-mail" required />
+                      <div class="flex form__checkbox">
+                          <input id="checkbox-ask" type="checkbox" class="checkbox" />
+                          <label for="checkbox-ask" class="label"></label>
+                          <label for="checkbox-ask" class="label-for">
+                              I give my
+                              <a href="#">consent to the processing<br />of personal data</a>
+                          </label>
+                      </div>
+                      <input type="submit" value="Buy" />
+                  </div>
+                </form>
               </div>
           </div>
       </div>
